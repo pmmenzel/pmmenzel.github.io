@@ -1,0 +1,25 @@
+body {
+	background-image: url("../images/sfnight.jpg");
+}
+
+.headers {
+	color: red;
+}
+
+p {
+	color: yellow;
+	font: 25px comic sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+li {
+	color: orange;
+}
+
+h6 {
+	font-size: 20px;
+}
