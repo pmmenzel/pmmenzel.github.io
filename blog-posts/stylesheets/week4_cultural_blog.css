@@ -1,0 +1,85 @@
+body {
+	background-image:url('../images/background_images/space.png');
+	background-size: 1200px;
+	background-position: relative;
+} 
+
+#sidebar {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 2px;
+	padding: 5px;
+	background:url('../images/old_map.png');
+}
+
+#edge {
+	border: 2px solid white;
+	border-radius: 150px;
+	box-shadow: 10px 10px 10px;
+}
+
+#main_content {
+	float: right; 
+	width: 65%;
+	position: relative;
+	margin-top: 50px;
+	
+}
+
+.center {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.head1 {
+	text-align: center;
+}
+
+.text {
+	position: relative;
+	color: #FFFFFF; 
+	display: inline-block;
+}
+
+.text img {
+	position: relative;
+	margin-left: 200px;
+	margin-right: 50px;
+}
+
+#main_content .text p {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #FFCC33;
+}
+
+h1 {
+	color:#FDB827;
+	font-family: sans-serif;
+	text-decoration: underline;
+}
+
+h2 {
+	text-align: center;
+	float: none;
+	position: relative;
+	color: #FDB827;
+}
+
+h4 {
+	color: red;
+}
+
+h5 {
+	color: red;
+	text-decoration: underline;
+}

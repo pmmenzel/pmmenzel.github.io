@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+	<head>
+			<title>Patrick's Technical Blog</title>
+			<link rel="stylesheet" type="text/css" href="stylesheets/week4_technical_blog.css">
+	</head>
+	<body>
+		
+		<div id="sidebar">
+			<h3 class="center">Hi! I'm Patrick</h3>
+
+				<img id="edge" class="center" src="images/profile.jpg" alt="Pat's pic">
+
+			<p class="center">Check out my other social networks!</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/dubstufdoreo">Twitter</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/pmmenzel">Facebook</a>
+				</li>
+				<li>
+					<a href="https://plus.google.com/+PatrickMenzel/posts/p/pub">Google +</a>
+				</li>
+			</ul>
+		</div>
+		<div id="main_content">
+			<div class="head1">
+				<h1>Patrick's Week 4 Technical Blog</h1>
+				<h2>June 9, 2014</h2>
+			</div>
+			<h2>Feeling LOOPY:  Analyzing <strong>Ruby</strong> Loops</h2>
+			<div class="text">
+				<img width="200px" src="images/ruby_logo.png" alt="Javascript">
+				<img width="200px"src="images/ruby_loops.png">
+				<h3>WHAT EXACTLY ARE LOOPS?</h3>
+					<p>
+						By definition a loop in Ruby is used to execute the same block of code a specified number of times.  These are the primary types of loops:  WHILE, UNTIL, EACH, FOR and several different ITERATORS. These loop functions allow you to do repetitive tasks very quickly and easily.  Lets break down how each one works and discuss scenarios wheres its good to use. 
+					</p> 
+				<h3>WHILE LOOPS:</h3>
+					<p>
+					The first of these loops we'll discuss is the WHILE loop. How WHILE loops work is they execute all of the contained statements within them but only as long as the conditional statement remains true. In this example, the loop continually increases the value of the variable i by one. As long as the conditional statement i < num is true, the loop will continue executing the statement i += 1 which adds one to the variable.
+					</p>
+					<img src="images/loop_images/while.png">
+				<h3>UNTIL LOOPS:</h3>
+					<p>
+						UNTIL loops, being almost identical to while loops, with the exception that it will loop <em>until</em> the conditional statement is <em>false</em>.  While loops will loop <em>while</em> the condition is <em>true</em>, until loops will loop <em>until</em> the condition is <em>true</em>. This example is the functional equivalent of the while loop example, except using an until loop, until i > num . The variable is incremented by one until its value equals ten.  
+					</p>
+					<img src="images/loop_images/until.png">
+			
+				<h3>FOR LOOPS:</h3>
+					<p>
+						A FOR Loop is used to repeat a specific block of code a known number of times. However, the use of FOR loops in Ruby is de-emphasized and is not used in typical practice. But their most common use is when looping over every number within a specificed range.  An example of this would be if we want to check the grade of every student in the class, we loop from 1 to that number. But, when working in ruby and you don't know the number of times you need to loop over something, its makes more sense to use a "While" loop. 
+					</p>
+					<img src="images/loop_images/for.png">
+				<h3>ITERATORS: EACH, TIMES, UPTO, DOWNTO and STEP</h3>
+					<p>
+						Traditionally, while and until loops are, in fact, used in Ruby programs, however, closure-based loops, or iterators, are more common.  These iterator loops are very different in how they were built compared to the while and until but it isn't even required to know specifically what they are or how they work in order to use them.  
+
+						Iterators are all a type of loop that can be applied to various types of objects, such as loops or hashes.  As there are a variety of loops, each one has slight variances in functionality and, therefore, are more applicable in different situations. 
+					</p>
+					<p>
+						<strong><em>Each:</em></strong><br/>
+						Each loops are made available for arrays and, as you may have assumed, it accesses each array element.  Then with the iteration variable we then test and use the element. However, the index number still isn't available. Though, it's not always necessarily the case, each loops can be applied to an array with strings as its elements.  But Each also has a modifier, Each_char, that can access a strings individual characters.  Lets look at some examples of both:
+					</p>
+						<img src="images/loop_images/each.png">
+					<p></p>
+						<img src="images/loop_images/each_char.png">
+					<p>
+						<strong><em>Times:</em></strong><br/>
+						TIMES iterator can be used with or without a iteration variable.  When utilizing the iteration variable, the variable i starts at 0 and applies a block of code the number of TIMES specified.  You may of noticed how TIMES loops use dot syntax (x.times do) as an alternative to the keyword syntax that the while and until loops utilize. This main relates to how TIMES loops are built and function fundamentally.  However, they are used in the same way as while and until loops. 
+					</p>
+					<img src="images/loop_images/time.png">
+					<p>
+						<strong><em>Upto:</em></strong><br/>
+						Another iterator is UPTO.  This loop works by beginning at the first number provided and continues on through the argument. In example below, we use "x" and "y" as the iteration variables and we nest an iterator loop using the UPTO loop.  This function will loop 3, 4 and 5 and at each index, it loops over the next two highest numbers.
+					</p>
+					<img src="images/loop_images/upto.png">
+					<p>
+						<strong><em>Downto:</em><br/></strong>
+						The decrement loop is the DOWNTO iterator in Ruby. After each time passing through the block code, the DOWNTO function reduces the initial number by 1 after. If we use DOWNTO with a number argument that is not lower, the iterator body is not executed.  It is the best practice to use the DOWNTO iterator only for simple loops. As an alternative solution for more complex and/or unusual interations, its best to use the step iteration.  As a general practice in the industry, it is the most ideal to use the most simple syntax, in terms of form, for a particular operation.  Therefore, If DOWNTO is effective, use it.
+					</p>
+					<img src="images/loop_images/downto.png">
+					<p>
+						<strong><em>Step:</em><br/></strong>
+						Looking for a more powerful iterator?  Look no further than the STEP iterator.  This iterator allows you to specify all, and possibly various, parts of a loop.  The starting and ending index is indicated first, as well as the STEP — which is the change after each iteration.  This is the ending index.  In the examples below, our first loop ends at the index 10 and our second, we end at 6.  The second argument given is the STEP. The iteration variable is changed by this amount—positive or negative—after each pass.
+					</p>
+					<img src="images/loop_images/step.png">
+					<p> In summary, iterators make loops simpler. When utilizing these iterators, we help eliminate index variables when possible. This decreases the likelihood of code complexity, which in turn prevents bugs. With upto, downto and times we have straightforward loops. But I think step is more powerful iteration.</p>
+
+				<h3>CONCLUSION:</h3>
+					<p>
+						Ultimately, there's no one right way to do any one thing, it all depends on the circumstances and what makes sense to your and/or your team.   However, in the ruby community it seems that the general practice leans towards utilizing iterators and, specifically, leans away from the use of For loops.  Generally, though, the best practice is to make a determination about how your code would best be read if someone who knew nothing about your project had to explain exactly what you did. 
+					</p>
+
+				<h5>Resources</h6>
+			<ul>
+				<li>http://ruby.learncodethehardway.org/book/ex32.html
+				</li>
+				<li>
+					http://www.tutorialspoint.com/ruby/ruby_loops.htm
+				</li>
+				<li>
+					http://www.skorks.com/2009/09/a-wealth-of-ruby-loops-and-iterators/
+				</li>
+				<li>
+					http://ruby.about.com/od/rubyfeatures/a/loops.htm
+				</li>
+				
+			</div>
+			
+			</ul>
+
+		</div>
+
+
+
+	</body>
+
+
+
+
+</html>
