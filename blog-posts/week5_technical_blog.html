@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+	<head>
+			<title>Patrick's Technical Blog</title>
+			<link rel="stylesheet" type="text/css" href="stylesheets/week5_technical_blog.css">
+	</head>
+	<body>
+		
+		<div id="sidebar">
+			<h3 class="center">Hi! I'm Patrick</h3>
+
+				<img id="edge" class="center" src="images/profile.jpg" alt="Pat's pic">
+
+			<p class="center">Check out my other social networks!</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/dubstufdoreo">Twitter</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/pmmenzel">Facebook</a>
+				</li>
+				<li>
+					<a href="https://plus.google.com/+PatrickMenzel/posts/p/pub">Google +</a>
+				</li>
+			</ul>
+		</div>
+		<div id="main_content"> 
+			<div class="head1">
+				<h1>Patrick's Week 5 Technical Blog</h1>
+				<h2>June 9, 2014</h2>
+			</div>
+			<h2>Keepin it Classy in Ruby</h2>
+			<div class="text">
+				<h3>WHAT EXACTLY IS A RUBY CLASS?</h3>
+					<p>
+						A class, in essence, is a map or blueprint for an object.  An object is an instance of a class.  Things an object knows about itself are called "instance variables."  They represent an object's state.  This basically means that instance variables are an objects data, for example, like the quantity and the product ID.  These can have unique values for each object of that type. A quote by Hal Fulton, author of "The Ruby Way," describes it best in my opinion:
+					</p> 
+					<div id="quote"><p>"An object is an entity that serves as a container for data and also controls access to the data. Associated with an object is a set of attributes, which are essentially no more than variables belonging to that object. Also associated with an object is a set of functions that provide an interface to the functionality of the object, called methods."</p></div>
+				<h3></h3>
+					<p>
+						In the example I'll be showing you today, we'll be using a Mutant (turtle) class that has several different types of properties for each Mutant, and each Mutant will have its own name, color, label and weapon.  Let's show the entire code for the Mutant class and then break it down, section by section:
+					</p>
+					<img src="images/class_images/class_m.png">
+				<h3>1. INITIALIZE</h3>
+					<p>
+						Alright, so the first thing we did, which might be obvious, is assign the new class a name which I announced previously to be, Mutant.  Now, when creating your objects you would make them equal to "Mutant.new([various properties])."  I'll get more into this later.  But for now, we move on to create our initializing method for our Mutant class which is "initialize."  In the parenthesis next to it you name the various properties you want for each new object you create.  In this case: name, color, intentions and weapon.  Below this we put our instance variables utilizing the "@" sign.  This can also be done using the attr_accessor like this, <span id="sample">"attr_accessor :name, :color, :intentions, :weapons."</span>  But for today, we'll stick with the basics.   Now, lets take a look at the next section. 
+					</p>
+					<img src="images/class_images/initial.png">
+			
+				<h3>2. DISPLAY (METHOD)</h3>
+					<p>
+						Now we create our first method that will call on these instance variable.  In our example below, we decide to print a string statement that calls all the instances of objects that will be created.  To do this, we simply input all our instance variables, again, using the "@" sign but also by placing them in curly brackets and starting with the hash ("#") symbol, like so "#{@[variable]}." As you'll see later, we create an object for various characters from the Mutant Ninja Turtles and this method will introduce each character (object) and provide some information about them in an easy to read sentence statement. 
+					</p>
+					<img src="images/class_images/display.png">
+				<h3>3. SOME EXTRA SAYINGS (...ERR METHODS)</h3>
+					<p>
+						Next, we wanted to add a couple more sayings and statements (or what some might consider methods) for the objects to call on.  These methods call various string statements that are relevant to the context of the class which ultimately helps you understand how, why and when these methods should be used.  Its important to using methods, objects, name of instance variables in a coherent way because this makes it much easier to understand for yourself later or for someone else who's never looked at it before.  
+					</p>
+					<img src="images/class_images/sayings.png">
+				<h3>4. CREATING CHARACTERS (A.K.A OBJECTS!)</h3>
+					<p>
+						Ok, so we've defined our class, the instance variables and the methods we want to be able to call on our objects but now we just need the objects themselves.   Below, we've created various variable names such as t1 and t2.  In order to assign these variables as a new instance of the Mutant class, we make those variables equal to <span id="sample">"Mutant.new([properties go here])."</span>  And BOOM, you got yourself some new objects for your Mutant class!  Now, as you can see, we have mostly good guys assigned to the instance variable "intentions," but we also have one bad guy - Shredder!  But we'll deal with him later, let's move one. 
+					</p>
+					<img src="images/class_images/character.png">
+				<h3>5. CALLING SOME METHODS FOR OUR CHARACTERS</h3>
+					<p>
+						The last thing we want to do is call some of our previously created methods on our newly created objects. To do so, simply use dot notation for each of the methods you'd like to call, like this, "t1.disply" or "m1.master".  As you can see below, calling each method prints the saying we assigned to that method previously. Pretty sweet!
+					</p>
+					<img src="images/class_images/methods.png">
+				<h3>6. CONSOLE RESULTS - VICOTRY (THE GOOD GUYS ALWAYS WIN!)</h3>
+					<p>
+						So, in the end when we call the ruby file with the new class Mutant and all the objects and methods we called, the result is seen in the image below.  It looks as though that Shredder was defeated by the ninja turtles once again!
+					</p>
+					<img src="images/class_images/console.png">
+					<p> 
+
+					</p>
+
+				<h3>CONCLUSION:</h3>
+					<p>
+					
+					</p>
+
+				<h5>RESOURCES:</h6>
+					<ul>
+						<li>
+						http://code.tutsplus.com/tutorials/ruby-for-newbies-working-with-classes--net-15938
+						</li>
+						<li>
+						http://rubylearning.com/satishtalim/writing_our_own_class_in_ruby.html
+						</li>
+					</ul>
+			</div>
+			
+			
+
+		</div>
+
+
+
+	</body>
+
+
+
+
+</html>
