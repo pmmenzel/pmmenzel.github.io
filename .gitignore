@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+BG-vid_optimized.webm
+BG-vid_optimized.mp4
+
