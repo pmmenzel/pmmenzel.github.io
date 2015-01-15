@@ -12,11 +12,17 @@
 
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/cover.css">
+      <!-- for some GODDAMN reason, I can't get the icons for my social media links to show up if I use a local font-awesome file.   I'm so confused.
+
+      UPDATE:  The issue was that it didn't have access to the fontawesome lib.  I put the entire font awesome directory in there instead of just the css file; pathed it out like below and BOOM, it worked.  I hate css sometimes
+        -->
+    <link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="stylesheets/cover.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,61 +33,68 @@
 
   <body>
 
-    <div class="site-wrapper">
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="cover-container">
 
-      <div class="site-wrapper-inner">
+          <section id="home" class="bg_parallax" data-type="background" data-speed="10">
 
-        <div class="cover-container">
+            <video preload="auto" loop autoplay poster="media/placerholder.png" id="placeholder">
+              <source src="media/BG_vid_optimized.webm" type="video/webm">
+              <source src="media/BG_vid_optimized.mp4" type="video/mp4">
+            </video>
+            <article class="bg_parallax inner cover">
+              <div class="pic"></div>
+              <p class="lead" id="intro">
+                Software Developer, <br>
+                Food Lover,<br>
+                Warriors Fanatic<br>
 
-          <video preload="auto" loop autoplay poster="media/placerholder.png" id="placeholder">
-            <source src="media/BG_vid_optimized.webm" type="video/webm">
-            <source src="media/BG_vid_optimized.mp4" type="video/mp4">
-          </video>
+                </p>
+            </article>
+          </section>
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Welcome</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="index.html">HOME</a></li>
-                <li><a href="https://medium.com/@ALLCAPS" target="_blank">BLOG</a></li>
-              </ul>
+            <div class="masthead clearfix">
+              <div class="inner">
+                <h3 class="masthead-brand">PATRICK MENZEL</h3>
+              </div>
             </div>
-          </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">PATRICK MENZEL</h1>
-            <p class="lead">
-              Senior Paralegal turned Software Developer <br>
-              seeking full-time Full-Stack Position! <br>
-              <br>
-              Check out my other social networks! <br>
-                <a href="https://twitter.com/ALLCAPZ" target="_blank"><i id="twitter-icon"class="fa fa-twitter-square fa-3x"></i></a>
-                <a href="https://github.com/pmmenzel/" target="_blank"><i id="github-icon"class="fa fa-github-square fa-3x"></i></a>
-                <a href="https://plus.google.com/+PatrickMenzel/posts/p/pub" target="_blank"><i id="google-icon"class="fa fa-google-plus-square fa-3x"></i></a>
-                <a href="http://www.linkedin.com/in/patrickmmenzel/" target="_blank"><i id="linkedin-icon"class="fa fa-linkedin-square fa-3x"></i></a>
+            <!-- ====== HOME/LANDING PAGE ====== -->
+
+
+            <section id="contact" class="bg_parallax" data-type="background" data-speed="10">
+              <p class="lead">
+              <a href="mailto:pmmenzel@gmail.com" id="email" class="btn btn-lg btn-default">Email Me</a>
               </p>
-            <p class="lead">
-            <a href="mailto:pmmenzel@gmail.com" id="email" class="btn btn-lg btn-default">Email Me</a>
-            </p>
-          </div>
+              <ul class="nav masthead-nav">
+                <li><a href="https://medium.com/@ALLCAPS" target="_blank"><i id="twitter-icon" class="fa fa-pencil-square-o fa-2x"></i></a></li>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>No Rights Reserved via <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/ALLCAPZ">@ALLCAPZ</a>.</p>
+                <li><a href="https://twitter.com/ALLCAPZ" target="_blank"><i id="twitter-icon" class="fa fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="https://github.com/pmmenzel/" target="_blank"><i id="github-icon" class="fa fa-github-square fa-2x"></i></a></li>
+                <li><a href="https://plus.google.com/+PatrickMenzel/posts/p/pub" target="_blank"><i id="google-icon" class="fa fa-google-plus-square fa-2x"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/patrickmmenzel/" target="_blank"><i id="linkedin-icon" class="fa fa-linkedin-square fa-2x"></i></a></li>
+              </ul>
+            </section>
+
+
+            <div class="mastfoot">
+              <div class="inner">
+                <p>No Rights Reserved via <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/ALLCAPZ">@ALLCAPZ</a>.</p>
+              </div>
             </div>
+
           </div>
-
         </div>
-
       </div>
 
-    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/parallax.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
