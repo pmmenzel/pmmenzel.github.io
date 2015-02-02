@@ -33,10 +33,10 @@
       <!-- ====== -->
       <!-- NAVBAR -->
       <!-- ====== -->
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-default navbar-fixed-top navvy" role="navigation">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-            <li class="navbar-item logo"><a href="#">PATRICK MENZEL</a></li>
+            <li class="navbar-item logo"><a href="mailto:pmmenzel@gmail.com">PATRICK MENZEL</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="navbar-item logo"><a href="https://www.twitter.com/ALLCAPZ" title="@ALLCAPZ">@ALLCAPZ</a></li>
@@ -54,7 +54,7 @@
           </video> -->
 
           <article>
-        <div class="welcome-text">WELCOME / Hello</div>
+            <div class="welcome-text">WELCOME / Hello</div>
             <div class="pic"></div>
             <p id="caption">
               Software Developer, <br>
@@ -70,7 +70,7 @@
         <!--  ABOUT -->
         <!-- ======= -->
         <section id="about" class="bg_parallax" data-type="background" data-speed="10">
-        <div class="vert-text">ABOUT / Summary</div><br>
+          <div class="vert-text">ABOUT / Summary</div><br>
           <article class="blurps">
             (REWRITE THIS TO MAKE IT MORE PESONAL)I am an experienced professional, driven by an appetite to learn and create amazing things. <br><br>
 
@@ -85,23 +85,21 @@
         <!-- ================== -->
         <section id="portfolio" class="bg_parallax" data-type="background" data-speed="10">
           <div class="vert-text">PORTFOLIO / Skills</div>
-          <article class="row">
-            <div class="projects col-xs-12 col-md-4 col-lg-4">
-              <H4>FIRST-AND-LEARN</H4>
-              <a href="https://first-and-learn.herokuapp.com"><img height="250" width="275" src="media/first_and_learn.png" alt="FIRST-AND-LEARN.HEROKUAPP.COM"></a>
-              <p>Create customized (learning) paths for anything from baking to programming, and then share your journey with family, friends, or coworkers.</p>
-            </div>
-            <div class="projects col-xs-12 col-md-4 col-lg-4">
-              <H4>BYO</H4>
-              <img src="media/mad_coding.gif" border="0"/><br />
-              <p>This application is potluck planner that will help you organize various social gatherings from BBQs to holiday parties. </p>
-            </div>
-            <!-- <div class="projects col-xs-12 col-md-3 col-lg-3">
-              <H4>Select-N-Pay</H4>
-              <img height="250" width="250" src="media/mad_coding.gif" border="0"/><br />
-              <p>Very basic phone check splitting app.  Building this to simply practice using <a href="http://ionicframework.com/">Ionic</a> which allows you to use write phone applications using basic HTML and angular.  Pretty cool framework!</p>
-            </div> -->
-          </article>
+          <div class="container-fluid port">
+            <article class="row project_container">
+              <div class="col-md-2 col-md-2"></div>
+              <div class="projects col-xs-12 col-md-5 col-lg-5">
+                <h4>FIRST-AND-LEARN</h4>
+                <a href="https://first-and-learn.herokuapp.com"><img src="media/first_and_learn.png" alt="FIRST-AND-LEARN.HEROKUAPP.COM"></a>
+                <p>Create customized (learning) paths for anything from baking to programming, and then share your journey with family, friends, or coworkers.</p>
+              </div>
+              <div class="projects col-xs-12 col-md-5 col-lg-5">
+                <h4>BYO (Work In Progress)</h4>
+                <img src="media/mad_coding.gif" border="0"/><br />
+                <p>This application is potluck planner that will help you organize various social gatherings from BBQs to holiday parties. </p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <!-- ======= -->
@@ -109,23 +107,22 @@
         <!-- ======= -->
         <section id="contact" class="bg_parallax" data-type="background" data-speed="10">
           <div class="vert-text">CONTACT / Connect</div>
-          <ul class=""><br><br>
-            <a href="mailto:pmmenzel@gmail.com" id="email">pmmenzel@gmail.com</a><br><br>
-            <a href="https://medium.com/@ALLCAPS" target="_blank"><i id="twitter-icon" class="fa fa-pencil-square-o fa-4x"></i></a>
+          <div class="container-fluid contacts">
+            <ul class="row">
+              <a href="https://medium.com/@ALLCAPS" target="_blank"><i id="contact-icon" class="fa fa-pencil-square-o fa-5x"></i></a>
 
-            <a href="https://twitter.com/ALLCAPZ" target="_blank"><i id="twitter-icon" class="fa fa-twitter-square fa-4x"></i></a>
-            <a href="https://github.com/pmmenzel/" target="_blank"><i id="github-icon" class="fa fa-github-square fa-4x"></i></a>
-            <a href="https://plus.google.com/+PatrickMenzel/posts/p/pub" target="_blank"><i id="google-icon" class="fa fa-google-plus-square fa-4x"></i></a>
-            <a href="http://www.linkedin.com/in/patrickmmenzel/" target="_blank"><i id="linkedin-icon" class="fa fa-linkedin-square fa-4x"></i></a>
-          </ul>
+              <a href="https://twitter.com/ALLCAPZ" target="_blank"><i id="contact-icon" class="fa fa-twitter-square fa-5x"></i></a>
+              <a href="https://github.com/pmmenzel/" target="_blank"><i id="contact-icon" class="fa fa-github-square fa-5x"></i></a>
+              <a href="https://plus.google.com/+PatrickMenzel/posts/p/pub" target="_blank"><i id="contact-icon" class="fa fa-google-plus-square fa-5x"></i></a>
+              <a href="http://www.linkedin.com/in/patrickmmenzel/" target="_blank"><i id="contact-icon" class="fa fa-linkedin-square fa-5x"></i></a>
+            </ul>
+          </div>
         </section>
 
 
-        <div class="mastfoot">
-          <div class="inner">
-            <p>No Rights Reserved via <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/ALLCAPZ">@ALLCAPZ</a>.</p>
-          </div>
-        </div>
+        <footer>
+          <p>Created by Patrick Menzel | <a href="https://twitter.com/ALLCAPZ">@ALLCAPZ</a></p>
+        </footer>
 
 
 
