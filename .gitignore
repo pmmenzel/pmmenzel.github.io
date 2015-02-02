@@ -13,10 +13,14 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/font-awesome-4.2.0
+/bootstrap-3.3.1
 
 BG-vid_optimized.webm
 BG-vid_optimized.mp4
 german_ladies.jpg
 pat_blue_motion2.gif
 sunset.jpg
+Gorilla_eye.jpg
+first_and_learn.png
 

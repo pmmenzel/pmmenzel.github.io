@@ -21,3 +21,6 @@ $(".fa-chevron-down").on("click", function(e) {
     $('body').animate({scrollTop:nextSection.offset().top},500);
     return false;
 });
+
+// website for parallax:
+// http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
