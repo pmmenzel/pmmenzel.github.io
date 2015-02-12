@@ -1,92 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="media/icon_pic.ico">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="media/icon_pic.ico">
 
-    <title>Patrick Menzel</title>
+  <title>Patrick Menzel</title>
 
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/cover.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
       <!-- for some GODDAMN reason, I can't get the icons for my social media links to show up if I use a local font-awesome file.   I'm so confused.
 
       UPDATE:  The issue was that it didn't have access to the fontawesome lib.  I put the entire font awesome directory in there instead of just the css file; pathed it out like below and BOOM, it worked.  I hate css sometimes
-        -->
+    -->
     <link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.css">
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
+    <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+      <![endif]-->
+    </head>
 
-  <body>
-
-      <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-          <div class="cover-container">
-
-          <section id="home" class="bg_parallax" data-type="background" data-speed="10">
-
-            <video preload="auto" loop autoplay poster="media/placerholder.png" id="placeholder">
-              <source src="media/BG_vid_optimized.webm" type="video/webm">
-              <source src="media/BG_vid_optimized.mp4" type="video/mp4">
-            </video>
-            <article class="bg_parallax inner cover">
-              <div class="pic"></div>
-              <p class="lead" id="intro">
-                Software Developer, <br>
-                Food Lover,<br>
-                Warriors Fanatic<br>
-
-                </p>
-            </article>
-          </section>
-
-            <div class="masthead clearfix">
-              <div class="inner">
-                <h3 class="masthead-brand">PATRICK MENZEL</h3>
-              </div>
-            </div>
-
-            <!-- ====== HOME/LANDING PAGE ====== -->
-
-
-            <section id="contact" class="bg_parallax" data-type="background" data-speed="10">
-              <p class="lead">
-              <a href="mailto:pmmenzel@gmail.com" id="email" class="btn btn-lg btn-default">Email Me</a>
-              </p>
-              <ul class="nav masthead-nav">
-                <li><a href="https://medium.com/@ALLCAPS" target="_blank"><i id="twitter-icon" class="fa fa-pencil-square-o fa-2x"></i></a></li>
-
-                <li><a href="https://twitter.com/ALLCAPZ" target="_blank"><i id="twitter-icon" class="fa fa-twitter-square fa-2x"></i></a></li>
-                <li><a href="https://github.com/pmmenzel/" target="_blank"><i id="github-icon" class="fa fa-github-square fa-2x"></i></a></li>
-                <li><a href="https://plus.google.com/+PatrickMenzel/posts/p/pub" target="_blank"><i id="google-icon" class="fa fa-google-plus-square fa-2x"></i></a></li>
-                <li><a href="http://www.linkedin.com/in/patrickmmenzel/" target="_blank"><i id="linkedin-icon" class="fa fa-linkedin-square fa-2x"></i></a></li>
-              </ul>
-            </section>
-
-
-            <div class="mastfoot">
-              <div class="inner">
-                <p>No Rights Reserved via <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/ALLCAPZ">@ALLCAPZ</a>.</p>
-              </div>
-            </div>
-
+    <body>
+        <!-- ====== -->
+        <!-- NAVBAR -->
+        <!-- ====== -->
+        <div class="navbar navbar-default navbar-fixed-top navvy" role="navigation">
+          <div class="container">
+            <ul class="nav navbar-nav">
+              <li class="navbar-item logo"><a href="mailto:pmmenzel@gmail.com">PATRICK MENZEL</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="navbar-item logo"><a href="https://www.twitter.com/ALLCAPZ" title="@ALLCAPZ">@ALLCAPZ</a></li>
+            </ul>
           </div>
         </div>
+
+      <div class="">
+        <!-- ===== -->
+        <!-- HOME -->
+        <!-- ===== -->
+        <section id="home" class="bg_parallax" data-type="background" data-speed="10">
+
+          <article>
+            <div class="welcome-text">WELCOME / Hello</div>
+            <div class="pic"></div>
+            <p id="caption">
+              Software Developer, <br>
+              Food Lover,<br>
+              Warriors Fanatic<br>
+            </p>
+          </article>
+          <a href="media/resume-pm.pdf" class="btn btn-default reso" >Download My Resume</a>
+
+          <div class="down-icon">
+          <a href="#" alt="Next-Section"><i class="fa fa-arrow-down fa-3x"></i></a>
+          </div>
+        </section>
+
+        <!-- ======= -->
+        <!--  ABOUT -->
+        <!-- ======= -->
+        <section id="about" class="bg_parallax" data-type="background" data-speed="10">
+          <div class="vert-text">ABOUT / Summary</div><br>
+          <article class="blurps">
+            I am an experienced professional but I'm just getting started on my career in Software Development.  So I have a lot to bring to the table but so much still to learn.  <br><br>
+
+            I love people and technology.  Working with a team of great people is always a primary objectiveI am a naturally curious person that loves to learn, discover, poke and prod. Programming has opened up a world of discovery to me in a way I never thought possible and I grow ever excited about where it will lead me next. <br><br>
+
+            Through my various experiences I've developed a great sense of teamwork, leadership and persistence. I love people and I truly look forward to working cohesively with a great team.
+          </article>
+          <div class="down-icon">
+          <a href="#" alt="Next-Section"><i class="fa fa-arrow-down fa-3x"></i></a>
+          </div>
+        </section>
+
+        <!-- ================== -->
+        <!-- PROJECTS/PORTFOLIO -->
+        <!-- ================== -->
+        <section id="portfolio" class="bg_parallax" data-type="background" data-speed="10">
+          <div class="vert-text">PORTFOLIO / Skills</div>
+          <div class="container-fluid port">
+            <article class="row project_container">
+              <div class="col-md-2 col-md-2"></div>
+              <div class="projects col-xs-12 col-md-5 col-lg-5">
+                <h4>FIRST-AND-LEARN</h4>
+                <a href="https://first-and-learn.herokuapp.com"><img src="media/first_and_learn.png" alt="FIRST-AND-LEARN.HEROKUAPP.COM"></a>
+                <p>Create customized (learning) paths for anything from baking to programming, and then share your journey with family, friends, or coworkers.</p>
+              </div>
+              <div class="projects col-xs-12 col-md-5 col-lg-5">
+                <h4>BYO (W.I.P)</h4>
+                <img src="media/mad_coding.gif" border="0"/><br />
+                <p>This application is potluck planner that will help you organize various social gatherings from BBQs to holiday parties. </p>
+              </div>
+            </article>
+          </div>
+              <div class="down-icon">
+              <a href="#" alt="Next-Section"><i class="fa fa-arrow-down fa-3x"></i></a>
+              </div>
+        </section>
+
+        <!-- ======= -->
+        <!-- CONTACT -->
+        <!-- ======= -->
+        <section id="contact" class="bg_parallax" data-type="background" data-speed="10">
+          <div class="vert-text">CONTACT / Connect</div>
+          <div class="container-fluid contacts">
+            <ul class="row">
+              <a href="https://medium.com/@ALLCAPS" target="_blank"><i id="contact-icon" class="fa fa-pencil-square-o fa-5x"></i></a>
+
+              <a href="https://twitter.com/ALLCAPZ" target="_blank"><i id="contact-icon" class="fa fa-twitter-square fa-5x"></i></a>
+              <a href="https://github.com/pmmenzel/" target="_blank"><i id="contact-icon" class="fa fa-github-square fa-5x"></i></a>
+              <a href="https://plus.google.com/+PatrickMenzel/posts/p/pub" target="_blank"><i id="contact-icon" class="fa fa-google-plus-square fa-5x"></i></a>
+              <a href="http://www.linkedin.com/in/patrickmmenzel/" target="_blank"><i id="contact-icon" class="fa fa-linkedin-square fa-5x"></i></a>
+            </ul>
+          </div>
+          <div class="up-icon">
+          <a href="#" alt="Top-Section"><i class="fa fa-arrow-up fa-3x"></i></a>
+          </div>
+        </section>
+
+
+        <footer>
+          <p>Created by Patrick Menzel | <a href="https://twitter.com/ALLCAPZ">@ALLCAPZ</a></p>
+        </footer>
       </div>
+
 
 
     <!-- Bootstrap core JavaScript
@@ -98,4 +145,4 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
-</html>
+  </html>
