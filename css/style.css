@@ -10,7 +10,7 @@ body {
 }
 
 li.logo {
-  font-family: 'Russo One', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 900;
 }
@@ -20,12 +20,20 @@ li.logo {
   color: white;
 }
 
+a.reso {
+  position: relative;
+  left: 44%;
+  color: white;
+  background-color: transparent;
+
+}
+
 .pic {
   background: url("../media/pat_blue_motion2.gif");
   background-position: center;
   border-radius: 150px;
   display: block;
-  margin: 15px auto;
+  margin: 50px auto;
   min-height: 300px;
   width: 300px;
 
@@ -33,7 +41,7 @@ li.logo {
 
 .blurps {
   font-size: 2em;
-  text-shadow: 3px 3px #000000;
+  /*text-shadow: 3px 3px #000000;*/
   margin: 1.5em;
   padding-left: 1.5em;
   position: relative;
@@ -49,8 +57,13 @@ li.logo {
   display: inline-block;
 }
 
+.project_container h4 {
+  width: 100%;
+  text-align: center;
+}
+
 .projects {
-  text-shadow: 2px 2px #000000;
+  /*width: 400px;*/
 }
 
 .projects p{
@@ -76,11 +89,12 @@ li.logo {
   /*transform-origin: 50% 50% 0;*/
   /*float: left;*/
   z-index: 10;
-  font-family: 'Russo One', sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 40px;
-  background: linear-gradient(yellow, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  /*background: linear-gradient(yellow, orange);*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
 }
 
 div.vert-text {
@@ -90,11 +104,43 @@ div.vert-text {
   top: 150px;
   float: left;
   z-index: 10;
-  font-family: 'Russo One', sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 40px;
-  background: linear-gradient(yellow, orange);
+  font-weight: 700;
+  /*background: linear-gradient(yellow, orange);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
+}
+
+
+div.down-icon {
+  text-align: center;
+  min-width: 100%;
+  margin-top: 50px;
+}
+
+.down-icon a {
+  color: white;
+  text-decoration: none;
+}
+
+.down-icon a:hover {
+  color: grey;
+}
+
+div.up-icon {
+  text-align: right;
+  min-width: 100%;
+  margin-top: 150px;
+}
+
+.up-icon a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-icon a:hover {
+  color: grey;
 }
 
 #home {
@@ -106,10 +152,11 @@ div.vert-text {
   background-repeat: no-repeat;
   /*color: white;*/
   /*min-height: 800px;*/
-  min-height: 800px;
+  height: 800px;
   min-width: 100%;
   padding-top: 5em;
   padding-bottom: 15em;
+  /*z-index: -10;*/
 }
 
 /*video#video {
@@ -117,7 +164,7 @@ div.vert-text {
   left: 0;
   top: 0;
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   width: auto;
   height: auto;
   z-index: -100;
@@ -132,7 +179,7 @@ div.vert-text {
   background-size: cover;
   background-position: 100% 0;
   background-repeat: no-repeat;
-  min-height: 800px;
+  height: 800px;
   padding: 10em;
   position: relative;
 }
@@ -144,7 +191,7 @@ div.vert-text {
   background-size: cover;
   background-position: 100% 0;
   background-repeat: no-repeat;
-  min-height: 800px;
+  height: 800px;
   padding: 10em;
   position: relative;
 
@@ -157,14 +204,14 @@ div.vert-text {
   background-size: cover;
   background-position: 100% 20%;
   background-repeat: no-repeat;
-  min-height: 800px;
+  height: 600px;
   padding: 10em;
   position: relative;
 
 }
 
 p#caption {
-  text-shadow: 3px 3px #000000;
+  /*text-shadow: 3px 3px #000000;*/
   font-size: 30px;
   color: white;
   text-align: center;
@@ -173,6 +220,10 @@ p#caption {
 #contact-icon {
   color: white;
   margin: 0 .07em;
+}
+
+#contact-icon:hover {
+  color: blue;
 }
 
 #email {
