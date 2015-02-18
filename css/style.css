@@ -41,11 +41,10 @@ a.reso {
 
 .blurps {
   font-size: 2em;
-  /*text-shadow: 3px 3px #000000;*/
-  margin: 1.5em;
-  padding-left: 1.5em;
-  position: relative;
-  top: -75px
+  /*margin: 1.5em;*/
+  /*padding-left: 1.5em;*/
+  /*position: relative;*/
+  /*top: -75px*/
 }
 
 .port {
@@ -55,15 +54,18 @@ a.reso {
 
 .project_container{
   display: inline-block;
+  width: 100%
 }
 
-.project_container h4 {
+.project_container h3 {
   width: 100%;
   text-align: center;
+  margin-top: 30px
 }
 
 .projects {
-  /*width: 400px;*/
+  max-height:400px;
+  max-width: 500px;
 }
 
 .projects p{
@@ -71,14 +73,13 @@ a.reso {
 }
 
 .projects img{
-  height: 300px;
-  width: 400px;
+  max-height: 250px;
+  width: 100%;
 }
 
 .contacts {
   position: relative;
-  top: 10em;
-  /*left: 3%;*/
+  margin-top: 10em;
 }
 
 #home div.welcome-text {
@@ -86,27 +87,24 @@ a.reso {
   transform: rotate(-90deg);
   left: -65px;
   top: 350px;
-  /*transform-origin: 50% 50% 0;*/
-  /*float: left;*/
   z-index: 10;
   font-family: Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 700;
-  /*background: linear-gradient(yellow, orange);*/
-  /*-webkit-background-clip: text;*/
-  /*-webkit-text-fill-color: transparent;*/
 }
 
 div.vert-text {
   position: relative;
   transform: rotate(-90deg);
-  left: -225px;
-  top: 150px;
+  left: -125px;
+  top: 200px;
   float: left;
   z-index: 10;
   font-family: Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 700;
+  width: 450px;
+  margin-bottom: 25px;
   /*background: linear-gradient(yellow, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
@@ -155,7 +153,7 @@ div.up-icon {
   height: 800px;
   min-width: 100%;
   padding-top: 5em;
-  padding-bottom: 15em;
+  padding-bottom: 13em;
   /*z-index: -10;*/
 }
 
@@ -173,14 +171,15 @@ div.up-icon {
 }*/
 
 #about {
-  background: url("../media/midday_view.jpg");
+  background: url("../media/lt_dusk.jpg");
   background-attachment: fixed;
   background-clip: initial;
   background-size: cover;
   background-position: 100% 0;
   background-repeat: no-repeat;
   height: 800px;
-  padding: 10em;
+  /*width: 100%;*/
+  padding: 2em;
   position: relative;
 }
 
@@ -191,8 +190,8 @@ div.up-icon {
   background-size: cover;
   background-position: 100% 0;
   background-repeat: no-repeat;
-  height: 800px;
-  padding: 10em;
+  height: 750px;
+  padding: 2em;
   position: relative;
 
 }
@@ -205,7 +204,7 @@ div.up-icon {
   background-position: 100% 20%;
   background-repeat: no-repeat;
   height: 600px;
-  padding: 10em;
+  padding: 2em;
   position: relative;
 
 }
